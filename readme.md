@@ -32,8 +32,10 @@ dac3d_reconstruction/
 │
 └─ test/                     # 测试与运行入口
     └─ run.py                # 完整运行示例
+```
 
-🚀 快速开始
+#🚀 快速开始
+```
 1. 环境准备
 建议使用 Conda 管理环境，以确保依赖兼容。
 # 1. 创建新的 Conda 环境 (Python 3.10)
@@ -56,20 +58,23 @@ python -m test.run
 输出结果：
 高度图： data/processed/apple_height_map.tif
 点云文件： data/processed/apple_pointcloud.ply
+```
 
-🛠️ 自定义其他物品建模
+#🛠️ 自定义其他物品建模
 如果你想使用其他物品的图片进行建模，请按以下步骤修改：
+```
 上传图片： 将你的图片上传至项目目录。
 修改路径： 在 generate_data.py (或相关脚本) 中，更改输入路径：
 input_path = "your_custom_image.jpg"  # 替换为你上传的图片路径
 更新 LUT： 在 LUT.py (或 simulate_lut.py) 中，更新为你上传图片对应的 LUT 仿真表（需自行根据光学特性合理计算）。
+```
 
-📊 结果展示
+#📊 结果展示
 以下是项目的重建效果示例：
-表格
-原图	3D 重建效果
-图 1 & 2： 苹果原图与生成的 3D 高度图示例。
-💡 特别说明
+![原图示例](apple.jpg) *图 1：苹果原图示例* 
+![高度图示例](data/processed/apple_3d.png) *图 2：苹果3d图示例*
+
+#💡 特别说明
 这是本人第一次上传的实验小项目，代码和算法仍有优化空间。
 版本兼容性： 请特别注意 requirements.txt 中库的版本，特别是 Open3D 和 OpenCV 的兼容性。
 欢迎反馈： 如有不足之处，欢迎提出建议和改进意见，共同完善该项目！
