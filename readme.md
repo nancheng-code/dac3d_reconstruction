@@ -8,7 +8,7 @@
 
 项目采用模块化设计，结构清晰，便于维护和扩展。
 
-```bash
+```
 dac3d_reconstruction/
 │
 ├─ data/                      # 数据存储目录
@@ -34,19 +34,21 @@ dac3d_reconstruction/
     └─ run.py                # 完整运行示例
 ```
 
-#🚀 快速开始
-1. 环境准备
+##🚀 快速开始
+###1. 环境准备
 建议使用 Conda 管理环境，以确保依赖兼容。
-# 1. 创建新的 Conda 环境 (Python 3.10)
+
+1. 创建新的 Conda 环境 (Python 3.10)
 ```
 conda create -n open3d python=3.10
 conda activate open3d
 ```
-# 2. 安装依赖
-# 在项目根目录下执行
+
+2. 安装依赖
+在项目根目录下执行
 pip install -r requirements.txt
 
-2. 运行项目
+###2. 运行项目
 在项目根目录下执行以下命令，即可启动完整流程：
 ```python -m test.run```
 执行流程：
@@ -71,7 +73,8 @@ input_path = "your_custom_image.jpg"  # 替换为你上传的图片路径
 
 #📊 结果展示
 以下是项目的重建效果示例：
-![3d图示例](data/processed/apple_3d.png) *图 2：苹果3d图示例*
+![3d图示例](data/processed/apple_3d.png) 
+*图 1：苹果3d图示例*
 
 #💡 特别说明
 这是本人第一次上传的实验小项目，代码和算法仍有优化空间。
