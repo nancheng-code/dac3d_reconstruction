@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+
+# Conda / venv
+env/
+venv/
+open3d/
+
+# IDE
+.idea/
+.vscode/
+
+# 数据
+data/raw/
+data/processed/
+
+# 系统文件
+.DS_Store
+Thumbs.db
