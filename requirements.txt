@@ -1,0 +1,31 @@
+# 核心科学计算与图像处理
+numpy>=1.21.0
+scipy>=1.7.0
+opencv-python>=4.5.0  # 用于通用图像 I/O 和基础处理
+tifffile>=2021.11.2   # 高效读取 TIFF 图像序列（DAC-3D 原始数据常用格式）
+Pillow>=8.0.0         # 备用图像处理库
+
+# 点云处理 (就业关联核心技术栈)
+open3d>=0.15.0
+
+# 3D 可视化 (根据课题描述，Napari 是首选)
+napari[all]>=0.4.18   # [all] 确保安装所有可选依赖，获得完整功能
+vispy>=0.12.0         # Napari 的底层渲染库，显式列出以确保兼容性
+
+# （可选）如果选择 Open3D 自带的可视化器而非 Napari
+# pyqt5>=5.15.0       # Open3D 可视化通常需要 PyQt 或 PySide
+
+# （可选）GPU加速 (课题提到了 CuPy，如果你的开发机有 NVIDIA GPU)
+# cupy-cuda11x>=10.0.0  # 请根据你的 CUDA 版本选择 (如 cuda11x, cuda12x)
+
+# 配置文件解析
+pyyaml>=6.0
+
+# 测试
+pytest>=6.2.0
+
+# （可选）如果你的 GUI 开发需要用到 PyQt5 (虽然 Napari 已包含)
+# pyqt5>=5.15.0
+
+# 新增：2D绘图与可视化 (用于查看预处理结果)
+matplotlib>=3.5.0
